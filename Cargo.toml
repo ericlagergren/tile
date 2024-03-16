@@ -1,0 +1,24 @@
+[package]
+name = "tile"
+version = "0.1.0"
+edition = "2021"
+description = """
+  Tiling based Certificate Transparency logs
+"""
+license = "BSD-3-Clause"
+readme = "README.md"
+repository = "https://github.com/ericlagergren/tile"
+keywords = [ "certificate", "transparency" ]
+categories = [ "no-std" ]
+
+[features]
+default = []
+
+# Enable libstd.
+std = []
+
+[dependencies]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docs"]
